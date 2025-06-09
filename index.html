@@ -9,6 +9,10 @@
     <h1>Meta Pixel Test Page</h1>
     <p>Click the button below to trigger a test event.</p>
     <button onclick="fbq('track', 'Lead');">Test Pixel Event</button>
+    <button onclick="fbq('track', 'Purchase', {
+    value: 49.99,       // Use dynamic value if possible
+    currency: 'USD'
+  });">Test Pixel Event</button>
 
     <!-- Meta Pixel Code Goes Here -->
     <!-- Meta Pixel Code -->
